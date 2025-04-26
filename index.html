@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survival Nexus</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,39 +12,31 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Raleway', sans-serif;
-            background: #2c3e50; /* Gris oscuro */
+            font-family: 'Roboto', sans-serif;
+            background: #2c3e50; /* Fondo oscuro con mezcla de tonos azules */
             color: white;
             overflow-x: hidden;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde Minecraft */
+            background: linear-gradient(135deg, #27ae60, #2ecc71); /* Verde suave mezclado */
             text-align: center;
             padding: 50px 20px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             position: relative;
             z-index: 1;
-            animation: headerAnimation 3s ease-in-out infinite alternate;
         }
         header h1 {
-            font-size: 50px;
+            font-size: 40px;
             letter-spacing: 5px;
             text-transform: uppercase;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-            font-family: 'Press Start 2P', cursive;
-        }
-
-        @keyframes headerAnimation {
-            0% { background: linear-gradient(135deg, #2ecc71, #27ae60); }
-            50% { background: linear-gradient(135deg, #16a085, #2ecc71); }
-            100% { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         }
 
         .navbar {
             display: flex;
             justify-content: center;
-            background: #34495e; /* Gris más claro */
+            background: #34495e; /* Gris oscuro pero suave */
             padding: 10px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
@@ -59,10 +51,10 @@
             border-radius: 30px;
             transition: 0.3s ease-in-out;
             display: inline-block;
-            background: #2ecc71; /* Verde Minecraft */
+            background: #16a085; /* Verde oscuro mezclado */
         }
         .navbar a:hover {
-            background: #27ae60;
+            background: #1abc9c; /* Verde más claro */
             color: #2d3436;
             transform: scale(1.1);
         }
@@ -70,18 +62,17 @@
         .container {
             width: 80%;
             margin: 50px auto;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
         }
 
         h2 {
-            color: #2ecc71; /* Verde Minecraft */
+            color: #2ecc71; /* Verde brillante */
             font-size: 36px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             margin-bottom: 20px;
-            font-family: 'Press Start 2P', cursive;
         }
 
         p {
@@ -92,12 +83,12 @@
 
         .ip-container {
             text-align: center;
-            background: #2ecc71; /* Verde Minecraft */
+            background: #2ecc71; /* Verde brillante */
             padding: 20px;
             border-radius: 30px;
             font-size: 24px;
-            animation: bounce 1.5s ease-in-out infinite alternate;
             display: inline-block;
+            animation: bounce 1.5s ease-in-out infinite alternate;
         }
 
         @keyframes bounce {
@@ -114,7 +105,7 @@
             gap: 20px;
         }
         .rules-list li, .plugins-list li {
-            background: #34495e; /* Gris más claro */
+            background: #34495e; /* Gris oscuro suave */
             border-radius: 30px;
             padding: 15px;
             font-size: 18px;
@@ -126,7 +117,7 @@
         }
         .rules-list li:hover, .plugins-list li:hover {
             transform: translateX(10px);
-            background: #16a085; /* Verde más oscuro */
+            background: #16a085; /* Verde oscuro mezclado */
         }
         .rules-list li::before, .plugins-list li::before {
             content: "✔️";
@@ -135,7 +126,7 @@
         }
 
         .community-section {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
             padding: 30px;
             margin-top: 30px;
             border-radius: 15px;
@@ -150,13 +141,13 @@
 
         .community-section p {
             font-size: 20px;
-            color: #2ecc71; /* Verde Minecraft */
+            color: #2ecc71; /* Verde brillante */
             margin-bottom: 20px;
         }
 
         .community-section a {
             text-decoration: none;
-            color: #2ecc71; /* Verde Minecraft */
+            color: #2ecc71; /* Verde brillante */
             font-weight: bold;
             transition: color 0.3s ease-in-out;
         }
@@ -189,7 +180,7 @@
         }
 
         .cta-button:hover {
-            background: #2ecc71; /* Verde Minecraft */
+            background: #2ecc71; /* Verde brillante */
             transform: scale(1.1);
         }
     </style>
@@ -259,7 +250,7 @@
         </section>
 
         <a href="mailto:survivalnexus42@gmail.com" class="cta-button">📧 Contáctanos</a>
-        <a href="https://lauti8899.github.io/Survival-Nexus2/" class="cta-button">😁Nusetra otra pagina web😁</a>
+        <a href="https://lauti8899.github.io/Survival-Nexus2/" class="cta-button">😁Nuestra otra página web😁</a>
     </div>
 
     <footer>
