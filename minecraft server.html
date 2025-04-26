@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Survival Minecraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #2c3e50; /* Gris oscuro */
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2ecc71, #27ae60); /* Verde Minecraft */
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            animation: headerAnimation 3s ease-in-out infinite alternate;
+        }
+        header h1 {
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        @keyframes headerAnimation {
+            0% { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+            50% { background: linear-gradient(135deg, #16a085, #2ecc71); }
+            100% { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #34495e; /* Gris más claro */
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 15px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            background: #2ecc71; /* Verde Minecraft */
+        }
+        .navbar a:hover {
+            background: #27ae60;
+            color: #2d3436;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            color: #2ecc71; /* Verde Minecraft */
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .ip-container {
+            text-align: center;
+            background: #2ecc71; /* Verde Minecraft */
+            padding: 20px;
+            border-radius: 30px;
+            font-size: 24px;
+            animation: bounce 1.5s ease-in-out infinite alternate;
+            display: inline-block;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+
+        .rules-list, .plugins-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 20px;
+        }
+        .rules-list li, .plugins-list li {
+            background: #34495e; /* Gris más claro */
+            border-radius: 30px;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+        .rules-list li:hover, .plugins-list li:hover {
+            transform: translateX(10px);
+            background: #16a085; /* Verde más oscuro */
+        }
+        .rules-list li::before, .plugins-list li::before {
+            content: "✔️";
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .community-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .community-section p {
+            font-size: 20px;
+            color: #2ecc71; /* Verde Minecraft */
+            margin-bottom: 20px;
+        }
+
+        .community-section a {
+            text-decoration: none;
+            color: #2ecc71; /* Verde Minecraft */
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .community-section a:hover {
+            color: #27ae60; /* Verde más oscuro */
+        }
+
+        footer {
+            background: #2d3436;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cta-button {
+            background: #27ae60; /* Verde más oscuro */
+            padding: 15px 30px;
+            color: white;
+            font-size: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            margin: 20px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background: #2ecc71; /* Verde Minecraft */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 Servidor Survival Minecraft 🌍</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="#ip">🌐 IP del Servidor</a>
+        <a href="#plugins">⚙️ Plugins</a>
+        <a href="#rules">📜 Reglas</a>
+        <a href="#community">💬 Comunidad</a>
+        <a href="#contact">✉️ Contacto</a>
+    </div>
+
+    <div class="container">
+        <section id="ip">
+            <h2>🔌 Dirección IP del Servidor</h2>
+            <div class="ip-container">
+                <p><strong>¡Conéctate y disfruta del mejor Survival!</strong></p>
+                <p><strong>IP: test.com</strong></p>
+            </div>
+        </section>
+
+        <section id="plugins">
+            <h2>⚙️ Plugins Instalados</h2>
+            <ul class="plugins-list">
+                <li>EssentialsX - Administración básica y comandos útiles</li>
+                <li>WorldEdit - Herramientas avanzadas para editar el mundo</li>
+                <li>GriefPrevention - Protección contra el griefering</li>
+                <li>mcMMO - Sistema de habilidades para jugadores</li>
+                <li>ClearLag - Reducción de lag al eliminar entidades innecesarias</li>
+                <li>Dynmap - Mapa en línea interactivo del servidor</li>
+                <li>Multiverse - Permite gestionar múltiples mundos</li>
+                <li>CoreProtect - Protección avanzada contra destrucción y hackeo</li>
+            </ul>
+        </section>
+
+        <section id="rules">
+            <h2>📜 Reglas del Servidor</h2>
+            <ul class="rules-list">
+                <li>No hacer trampas ni usar hacks.</li>
+                <li>Respeta a otros jugadores y su propiedad.</li>
+                <li>No hacer publicidad de otros servidores.</li>
+                <li>No utilizar lenguaje ofensivo ni insultante.</li>
+                <li>No hacer griefing ni robar a otros jugadores.</li>
+                <li>La explotación de bugs está prohibida.</li>
+                <li>Evita el spam en el chat.</li>
+                <li>Sigue las instrucciones de los administradores.</li>
+            </ul>
+        </section>
+
+        <section id="community">
+            <h2>💬 Comunidad y Redes Sociales</h2>
+            <div class="community-section">
+                <p><strong>Discord: <a href="https://discord.gg/tu-servidor" target="_blank">https://discord.gg/tu-servidor</a></strong></p>
+                <p>Síguenos en nuestras redes sociales para estar al tanto de eventos y actualizaciones.</p>
+                <p><strong>Twitter:</strong> <a href="https://twitter.com/tu_servidor" target="_blank">@tu_servidor</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/tu_servidor" target="_blank">@tu_servidor</a></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>✉️ Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o directamente en el servidor.</p>
+        </section>
+
+        <a href="mailto:contacto@servidor.com" class="cta-button">📧 Contáctanos</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Servidor Survival Minecraft. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
