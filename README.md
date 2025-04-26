@@ -57,5 +57,5 @@ Si tienes alguna pregunta o necesitas asistencia, puedes contactarnos directamen
 1. Abre **Minecraft**.
 2. Ve a la opción **"Multijugador"**.
 3. Haz clic en **"Agregar servidor"**.
-4. Escribe **"test.com"** como la dirección del servidor.
+4. Escribe **"survivalnexus.axenthost.me** como la dirección del servidor.
 5. Haz clic en **"Unirse"** y ¡comienza a jugar!
