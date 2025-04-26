@@ -34,21 +34,21 @@ Este servidor cuenta con los siguientes plugins:
 
 Puedes unirte al servidor utilizando la siguiente dirección IP:
 
-**IP del Servidor: [test.com](test.com)**
+**IP del Servidor: [survivalnexus.axenthost.me](survivalnexus.axenthost.me)**
 
 ## 💬 Comunidad y Redes Sociales
 
 Únete a nuestra comunidad para estar al tanto de eventos, actualizaciones y más:
 
 - **Discord**: [https://discord.gg/tu-servidor](https://discord.gg/tu-servidor)
-- **Twitter**: [@tu_servidor](https://twitter.com/tu_servidor)
-- **Instagram**: [@tu_servidor](https://instagram.com/tu_servidor)
+- **Twitter**: [@Survival_Nexus]([https://twitter.com/tu_servidor](https://x.com/Survival_Nexus))
+- **Instagram**: [@survival_nexus_]([https://instagram.com/tu_servidor](https://www.instagram.com/survival_nexus_/))
 
 ## 📧 Contacto
 
 Si tienes alguna pregunta o necesitas asistencia, puedes contactarnos directamente por email a:
 
-**Email**: contacto@servidor.com
+**Email**: survivalnexus42@gmail.com
 
 ---
 
@@ -59,16 +59,3 @@ Si tienes alguna pregunta o necesitas asistencia, puedes contactarnos directamen
 3. Haz clic en **"Agregar servidor"**.
 4. Escribe **"test.com"** como la dirección del servidor.
 5. Haz clic en **"Unirse"** y ¡comienza a jugar!
-
----
-
-## 🔧 Contribuye al Proyecto
-
-Si deseas contribuir al servidor o a este proyecto, por favor revisa las [directrices de contribución](CONTRIBUTING.md) y abre un *pull request*.
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la **Licencia MIT**. Para más detalles, consulta el archivo [LICENSE](LICENSE).
-
