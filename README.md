@@ -40,7 +40,7 @@ Puedes unirte al servidor utilizando la siguiente dirección IP:
 
 Únete a nuestra comunidad para estar al tanto de eventos, actualizaciones y más:
 
-- **Discord**: [https://discord.gg/tu-servidor](https://discord.gg/tu-servidor)
+- **Discord**: [https://discord.gg/M9UwdSn7PE](https://discord.gg/M9UwdSn7PE)
 - **Twitter**: [@Survival_Nexus]([https://twitter.com/tu_servidor](https://x.com/Survival_Nexus))
 - **Instagram**: [@survival_nexus_]([https://instagram.com/tu_servidor](https://www.instagram.com/survival_nexus_/))
 
